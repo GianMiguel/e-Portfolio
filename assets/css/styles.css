@@ -183,6 +183,7 @@ body, html {
 
 .nav-icons {
   display: flex;
+  flex-direction: row;
   padding: 15px 32px;
 }
 
@@ -692,7 +693,7 @@ button:hover {
     flex-direction: column;
   }
   .gif img {
-    height: 40vh;
+    height: 30vh;
     width: auto;
     margin: 0 auto;
     margin-bottom: 10vw;
@@ -769,7 +770,8 @@ button:hover {
   }
 
   .card-container {
-    flex-wrap: wrap;
+    flex-direction: column;
+    margin: 0 30vw;
   }
 
   .card {
@@ -826,9 +828,10 @@ button:hover {
   button {
     width: 30vw;
   }
-
-
+  .page-3 .gif {
+    padding-bottom: 50px;
+  }
   .page-3 .gif img {
-    height: 25vh;
+    height: 20vh;
   }
 }

@@ -181,6 +181,15 @@ body, html {
   margin-left: 50px;
 }
 
+.nav-icons {
+  display: flex;
+  padding: 15px 32px;
+}
+
+.nav-icons a { 
+  padding: 10px;
+}
+
 @media screen and (max-height: 450px) {
   .sidenav a {font-size: 18px;}
 }
@@ -576,7 +585,6 @@ body, html {
   content: "</ form >";
 }
 
-
 .tagDivCloseBody::after {
   content: "</ body >";
 
@@ -646,23 +654,29 @@ button:hover {
     cursor: pointer;
   }
 
-  .tagHtml::before,
-  .tagBody::before,
-  .tagDiv::before,
-  .tagDivClose::after,
-  .greeting::before, 
-  .title::before,
-  .greeting::after,
-  .title::after,
-  .tagName::before,
-  .tagName::after,
-    /* About Section */
-  .tagDivAbout::before,
-  .tagDivCloseAbout::after,
-  .tagAbout::before, 
-  .tagAbout::after,
-  .pAbout::before,
-  .pAbout::after {
+  /* Main Section */
+.tagHtml::before,
+.tagBody::before,
+.tagDiv::before,
+.tagDivClose::after,
+.greeting::before, 
+.title::before,
+.greeting::after,
+.title::after,
+.tagName::before,
+.tagName::after,
+/* About Section */
+.tagDivAbout::before,
+.tagDivCloseAbout::after,
+.tagAbout::before, 
+.tagAbout::after,
+.pAbout::before,
+.pAbout::after,
+/* contact section */
+.form::before,
+.form::after,
+.tagDivCloseBody,
+.tagHtmlClose {
     font-size: .5em;
   }
 
@@ -671,6 +685,7 @@ button:hover {
     bottom: 80px;
     left: 72vw;
     transform: rotate(270deg);
+    display: none;
   }
 
   .page-0, .page-1, .page-2 {
@@ -748,10 +763,72 @@ button:hover {
   /* Projects Section */
   .page-2 .bg-text {
     font-size: 8rem;
-    top: 240vh;
-    left: 65vw;
+    top: 260vh;
+    left: 75vw;
     transform: rotate(270deg);
   }
 
+  .card-container {
+    flex-wrap: wrap;
+  }
 
+  .card {
+    width: 150px;
+    height : 100px;
+    margin : 10px 10px;
+    padding : 10px 15px;
+    border: 1px solid white;
+  }
+
+  .card:hover {
+    height : 150px;    
+  }
+
+  .card .image {
+    width: 100px;
+  }
+
+  .card .content {
+    top: -80px;
+    font-size: 10px;
+  }
+
+  .card .content .icons{
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  /* contacts Section */
+
+  .page-3 {
+    flex-direction: column;
+  }
+  .page-3 .text-box {
+    margin-top: 50px;
+  }
+  
+  .tagDivCloseBody {
+    margin-left: -25px;
+  }
+  .tagHtmlClose{
+    margin-left: -30px;
+  }
+
+  form {
+    width: 70vw;
+    row-gap: 5px;
+  }
+
+  input, textarea {
+    font-size: .8em;
+  }
+
+  button {
+    width: 30vw;
+  }
+
+
+  .page-3 .gif img {
+    height: 25vh;
+  }
 }

@@ -805,6 +805,10 @@ button:hover {
   .page-3 {
     flex-direction: column;
   }
+
+  .page-3 .bg-text {
+    display: none;
+  }
   .page-3 .text-box {
     margin-top: 50px;
   }

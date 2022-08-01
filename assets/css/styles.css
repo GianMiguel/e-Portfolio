@@ -288,7 +288,7 @@ body, html {
 .tagDivCloseBody,
 .tagHtmlClose
 { 
-  content: "< h5 >";
+  content: "< h4 >";
   font-size: 1rem;
   font-family: 'Kaushan Script', cursive;
   /* font-family: 'Allura', cursive; */
@@ -296,7 +296,7 @@ body, html {
   padding-right: 10px;
 }
 .greeting::after, .title::after{
-  content: "</ h5 >";
+  content: "</ h4 >";
   padding-left: 10px;
 }
 
@@ -402,6 +402,8 @@ body, html {
 }
 
 .pText {
+  font-size: 18px;
+  line-height: 1.4em;
   padding: 10px 0;
   margin-left: 3rem;
 }
@@ -491,7 +493,7 @@ body, html {
 }
 
 .card:hover {
-  height : 300px;    
+  height : 310px;    
 }
 
 .card .image {
@@ -610,6 +612,7 @@ form {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
+  padding: 20px;
 }
 
 input, textarea {
@@ -744,8 +747,9 @@ button:hover {
 
   .pText {
     padding: 0;
-    font-size: .6em;
+    font-size: 1em;
     margin-left: 2rem;
+   
   }
   .tagDivAbout {
     padding-bottom: .5em;

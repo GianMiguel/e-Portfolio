@@ -580,6 +580,9 @@ body, html {
   padding-top: 1rem;
 }
 
+.page-3 .about span {
+  color: #f50057;
+}
 .form::before {
   content: "< form >";
 }
